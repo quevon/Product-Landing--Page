@@ -180,7 +180,7 @@ header .icons #menu-bars{
 }
 .dishes .box-container .box .fa-heart:hover,
 .dishes .box-container .box .fa-eye:hover{
-    background: var(--green);
+    background: var(--red);
     color: #fff;
 
 }
@@ -217,10 +217,10 @@ header .icons #menu-bars{
 }
 .dishes .box-container .box .stars i{
     font-size:1.7rem;
-    color: var(--green);
+    color: var(--red);
 }
 .dishes .box-container .box span{
-    color: var(--green);
+    color: var(--red);
     font-weight: bolder;
     margin-right: 1rem;
     font-size: 2.5rem;
