@@ -41,7 +41,7 @@ section:nth-child(even){
     display: inline-block;
     font-size: 1.7rem;
     color: #fff;
-    background: var(--red);
+    background: var(--black);
     border-radius: 5rem;
     padding: .8rem 3rem;
     cursor: pointer;
@@ -66,7 +66,7 @@ header .logo img{
     top: 0;
     position: absolute;
     height: 10rem;
-    color: var(--green);
+    color: var(--red);
 
 } 
 header .navbar a{
