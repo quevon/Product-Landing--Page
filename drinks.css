@@ -21,6 +21,9 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
+body{
+    background: rgb(245, 235, 220);
+}
 section{
     padding: 2rem 9%;
 }
@@ -148,15 +151,16 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
-.dishes{
-    background: rgb(245, 235, 220);
-}
-.dishes .box-container{
+.burger .box-container,
+.drinks .box-container,
+.dessert .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 1.5rem;
 }
-.dishes .box-container .box{
+.burger .box-container .box,
+.drinks .box-container .box,
+.dessert .box-container .box{
     padding:2.5rem;
     background: #fff;
     border-radius: .5rem;
@@ -166,8 +170,12 @@ header .icons #menu-bars{
     overflow: hidden;
     text-align: center;
 }
-.dishes .box-container .box .fa-heart,
-.dishes .box-container .box .fa-eye{
+.burger .box-container .box .fa-heart,
+.burger .box-container .box .fa-eye,
+.drinks .box-container .box .fa-heart,
+.drinks .box-container .box .fa-eye,
+.dessert .box-container .box .fa-heart,
+.dessert .box-container .box .fa-eye{
     position: absolute;
     top: 1.5rem;
     background: rgb(245, 235, 220);
@@ -178,25 +186,39 @@ header .icons #menu-bars{
     font-size: 2rem;
     color: var(--black);
 }
-.dishes .box-container .box .fa-heart:hover,
-.dishes .box-container .box .fa-eye:hover{
+.burger .box-container .box .fa-heart:hover,
+.burger .box-container .box .fa-eye:hover,
+.drinks .box-container .box .fa-heart:hover,
+.drinks .box-container .box .fa-eye:hover,
+.dessert .box-container .box .fa-heart:hover,
+.dessert .box-container .box .fa-eye:hover{
     background: var(--red);
     color: #fff;
 
 }
-.dishes .box-container .box .fa-heart{
+.burger .box-container .box .fa-heart,
+.drinks .box-container .box .fa-heart,
+.dessert .box-container .box .fa-heart{
     right: -15rem;
 }
-.dishes .box-container .box .fa-eye{
+.burger .box-container .box .fa-eye,
+.drinks .box-container .box .fa-eye,
+.dessert .box-container .box .fa-eye{
     left: -15rem;
 }
-.dishes .box-container .box:hover .fa-heart{
+.burger .box-container .box:hover .fa-heart,
+.drinks .box-container .box:hover .fa-heart,
+.dessert .box-container .box:hover .fa-heart{
     right: 1.5rem;
 }
-.dishes .box-container .box:hover .fa-eye{
+.burger .box-container .box:hover .fa-eye,
+.drinks .box-container .box:hover .fa-eye,
+.dessert .box-container .box:hover .fa-eye{
     left: 1.5rem;
 }
-.dishes .box-container .box img{
+.burger .box-container .box img,
+.drinks .box-container .box img,
+.dessert .box-container .box img{
     height: 17rem;
     margin: 1rem 0;
     animation: drop 0.5s ease forwards;
@@ -208,23 +230,33 @@ header .icons #menu-bars{
 }
 
 
-.dishes .box-container .box:hover{
+.burger .box-container .box:hover,
+.drinks .box-container .box:hover,
+.dessert .box-container .box:hover{
     transform: translateY(-10px);
 }
-.dishes .box-container .box h3{
+.burger .box-container .box h3,
+.drinks .box-container .box h3,
+.dessert .box-container .box h3{
     color: var(--black);
     font-size: 2.5rem;
 }
 
 
-.dishes .box-container .box .stars{
+.burger .box-container .box .stars,
+.drinks .box-container .box .stars,
+.dessert .box-container .box .stars{
     padding:1rem 0;
 }
-.dishes .box-container .box .stars i{
+.burger .box-container .box .stars i,
+.drinks .box-container .box .stars i,
+.dessert .box-container .box .stars i{
     font-size:1.7rem;
     color: var(--red);
 }
-.dishes .box-container .box span{
+.burger .box-container .box span,
+.drinks .box-container .box span,
+.dessert .box-container .box span{
     color: var(--red);
     font-weight: bolder;
     margin-right: 1rem;

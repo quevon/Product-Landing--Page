@@ -248,6 +248,7 @@ header .icons #menu-bars{
     flex-wrap: wrap;
     gap:1rem;
     border: 1px solid var(--black);
+    border-radius: 5px;
 }
 .contact .row .map{
     flex:1 1 45rem;
@@ -260,6 +261,7 @@ header .icons #menu-bars{
     padding:5rem 2rem;
     text-align: center;
     border: 1px solid var(--black);
+    
 }
 
 .contact .row form h3{
@@ -273,7 +275,16 @@ header .icons #menu-bars{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    border: 1px solid var(--black);
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width:2px ;
+    transition: all 0.3s ease;
+    
 
 }
 

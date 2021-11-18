@@ -150,11 +150,11 @@ header .icons #menu-bars{
     top: 2rem; right: 3rem;
     font-size: 5rem;
 }
-.dishes{
+.menu{
     height:100vh;
     background: rgb(245, 235, 220);
 }
-.dishes .box-container{
+.menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
@@ -162,8 +162,7 @@ header .icons #menu-bars{
     align-items: center;
 
 }
-.dishes .box-container .box{
-
+.menu .box-container .box{
     padding:2.5rem;
     position: relative;
     overflow: hidden;
@@ -173,7 +172,7 @@ header .icons #menu-bars{
 }
 
 
-.dishes .box-container .box .menu-1{
+.menu .box-container .box .menu-1{
     height: 17rem;
     margin: 1rem 0;
     animation: drop 0.5s ease forwards;
@@ -183,7 +182,7 @@ header .icons #menu-bars{
     70%{transform: translateY(-1100px)}
     100%{transform: translateY(0); opacity: 1;}
 }
-.dishes .box-container .box .menu-2{
+.menu .box-container .box .menu-2{
     height: 17rem;
     margin: 1rem 0;
     animation: drop 0.7s ease forwards;
@@ -193,7 +192,7 @@ header .icons #menu-bars{
     70%{transform: translateY(-1100px)}
     100%{transform: translateY(0); opacity: 1;}
 }
-.dishes .box-container .box .menu-3{
+.menu .box-container .box .menu-3{
     height: 17rem;
     margin: 1rem 0;
     animation: drop 0.9s ease forwards;
@@ -203,21 +202,21 @@ header .icons #menu-bars{
     70%{transform: translateY(-1100px)}
     100%{transform: translateY(0); opacity: 1;}
 }
-.dishes .box-container .box:hover {
+.menu .box-container .box:hover {
     transform: translateY(-10px);
  
 }
-.dishes .box-container .box:hover >*{
+.menu .box-container .box:hover >*{
     color: var(--red);
  
 }
-.dishes .box-container .box h3{
+.menu .box-container .box h3{
     color: var(--black);
     font-size: 2.5rem;
 }
 
 
-.dishes .box-container .box .stars{
+.menu .box-container .box .stars{
     padding:1rem 0;
 }
 
@@ -302,7 +301,6 @@ header .icons #menu-bars{
         margin: 0 1rem;
     }
     .home .home-slider .slide .content h3{
-
         font-size: 5rem;
     }
 }
@@ -311,7 +309,7 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
-    .dishes .box-container .box img{
+    .menu .box-container .box img{
         height: auto;
         width: 100%;
     }
