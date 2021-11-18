@@ -3,7 +3,7 @@
     --red: red;
     --black:#192a56;
     --light-color:#666;
-    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --box-shadow:0 1rem 1.5rem rgba(0,0,0,.1);
 
 
 }
@@ -22,17 +22,27 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
+body{
+    background: rgb(245, 235, 220);
+}
 section{
     padding: 2rem 9%;
 }
 section:nth-child(even){
     background: rgb(245, 235, 220);
 }
+.sub-heading{
+    text-align: center;
+    color: var(--red);
+  
+    font-size: 2rem;
+    padding-top: 1rem;
+}
 .heading{
     text-align: center;
     color: var(--black);
-    font-size:5rem;
-    padding-top: 10rem;
+    font-size: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -74,13 +84,11 @@ header .navbar a{
     border-radius: 50% 10% / 25%;
     padding: .5rem 1.5rem;
     color: var(--light-color);
-   
 }
 header  .navbar a.active,
 header .navbar a:hover{
     color: #fff;
     background: var(--red);
-    border: 1px  solid var(--black);
 }
 header .icons i,
 header .icons a{
@@ -94,7 +102,6 @@ header .icons a{
     color: var(--black);
     border-radius: 50%;
     background: rgb(245, 235, 220);
-    border: 1px  solid var(--black);
 
 }
 header .icons i:hover,
@@ -150,93 +157,97 @@ header .icons #menu-bars{
     top: 2rem; right: 3rem;
     font-size: 5rem;
 }
-.dishes{
-    height:100vh;
-    background: rgb(245, 235, 220);
-}
-.dishes .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
+.contact{
+    display: flex;
     align-items: center;
-
+    justify-content: center;
+    padding-top: 10rem;
 }
-.dishes .box-container .box{
-
-    padding:2.5rem;
-    position: relative;
-    overflow: hidden;
+.contact form{
+    padding:5rem 2rem;
     text-align: center;
-    cursor: pointer;
-
+    border: 1px solid var(--black);
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
 }
 
-
-.dishes .box-container .box img{
-    height: 17rem;
-    margin: 1rem 0;
-    animation: drop 0.5s ease forwards;
-}
-@keyframes drop{
-    0%{opacity: 0;}
-    70%{transform: translateY(-1100px)}
-    100%{transform: translateY(0); opacity: 1;}
-}
-.dishes .box-container .box:hover {
-    transform: translateY(-10px);
- 
-}
-.dishes .box-container .box:hover >*{
-    color: var(--red);
- 
-}
-.dishes .box-container .box h3{
+.contact form h3{
+    text-transform: uppercase;
+    font-size:3.5rem;
     color: var(--black);
-    font-size: 2.5rem;
 }
 
+.contact form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    box-shadow: var(--box-shadow);
 
-.dishes .box-container .box .stars{
+}
+
+.contact form .inputBox span{
+    color:var(--black);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:var(--black);
+    text-transform: none;
+    background:none;
+}
+.footer{
+    background:var(--black);
+    text-align: center;
+    border-top: 1px solid var(--black);
+
+}
+
+.footer .share{
+    display: flex;
+    flex-direction: row;
     padding:1rem 0;
+    justify-content: center;
+}
+
+.footer .share a{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin:.3rem;
+    border-radius: 50%;
+    border: 1px  solid var(--black);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .share a:hover{
+    background-color: var(--red);
+    transform: translateY(-10px);
 }
 
 
+.footer .credit{
+    font-size: 2rem;
+    color:var(--black);
+    font-weight: lighter;
+    padding:.5rem;
+}
+
+.footer .credit span{
+    color:var(--red);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries */
 
 @media(max-width:991px){
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger-King</title>
     <link rel="icon" type="png" href="images/logobk.png" />
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
@@ -19,8 +19,8 @@
             <a href="home.html">home</a>
             <a href="menus.html">menu</a>
             <a href="about.html">about</a>
-            <a class="active" href="contact.html">contact</a>
-            <a  href="signup.html">Sign up</a>
+            <a href="contact.html">contact</a>
+            <a class="active" href="signup.html">Sign up</a>
             <a href="log-in.html">Log In</a>
       
         </nav>
@@ -45,14 +45,8 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading"> contact us </h1>
-    
-        <div class="row">
-    
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3859.966567503531!2d120.9605094!3d14.6578388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b55d3b13374b%3A0x40a8d7cc1fe3b0d6!2sBurger%20King!5e0!3m2!1sen!2sph!4v1637131995198!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
-    
             <form action="">
-                <h3>get in touch</h3>
+                <h3>Sign up</h3>
                 <div class="inputBox">
                     <span class="fas fa-user"></span>
                     <input type="text" placeholder="name" required>
@@ -62,18 +56,19 @@
                     <input type="email" placeholder="email" required>
                 </div>
                 <div class="inputBox">
-                    <span class="fas fa-phone"></span>
-                    <input type="number" placeholder="number" required>
+                    <span class="fas fa-key"></span>
+                    <input type="password" placeholder="password" required>
                 </div>
-                <input type="submit" value="contact now" class="btn">
+                <div class="inputBox">
+                    <span class="fas fa-key"></span>
+                    <input type="password" placeholder="confirm password" required>
+                </div>
+                <input type="submit" value="Create Account" class="btn">
             </form>
-    
-        </div>
-    
+
     </section>
     
-   
-    <!-- <section class="footer">
+    <section class="footer">
 
         <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
@@ -85,9 +80,9 @@
     
     
         <div class="credit">created by <span>Quevon M. galang</span> | all rights reserved</div>
-
     
-    </section> -->
+    
+    </section>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

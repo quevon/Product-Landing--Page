@@ -22,6 +22,9 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
+body{
+    background: rgb(245, 235, 220);
+}
 section{
     padding: 2rem 9%;
 }
@@ -86,7 +89,8 @@ header  .navbar a.active,
 header .navbar a:hover{
     color: #fff;
     background: var(--red);
-    top: 0;
+    border: 1px  solid var(--black);
+
     
 }
 header .icons i,
@@ -101,6 +105,7 @@ header .icons a{
     color: var(--black);
     border-radius: 50%;
     background: rgb(245, 235, 220);
+    border: 1px  solid var(--black);
 
 }
 header .icons i:hover,
@@ -156,9 +161,9 @@ header .icons #menu-bars{
     top: 2rem; right: 3rem;
     font-size: 5rem;
 }
-.home{
-    background: rgb(245, 235, 220);
-}
+
+
+
 .home .home-slider .slide{
     display: flex;
     align-items: center;
@@ -175,8 +180,21 @@ header .icons #menu-bars{
 }
 .home .home-slider .slide .image img{
     width: 100%;
-
+    top: 400px;
+    animation: drop 0.5s ease forwards;
+    /* transition: transform 1s ease-in-out; */
 }
+    @keyframes drop{
+        0%{opacity: 0;}
+        70%{transform: translateY(-1100px)}
+        100%{transform: translateY(0); opacity: 1;}
+    }
+/* .home:hover .home-slider .slide .image img{
+    transform:translateY(-150px)
+
+
+
+} */
 .home .home-slider .slide .content span{
     color: var(--red);
     font-size: 2.5rem;
@@ -196,25 +214,25 @@ header .icons #menu-bars{
 }
 
 .about{
-    height: 100vh;
     display: block;
     align-items: center;
     justify-items: center;
-    background: rgb(245, 235, 220);
+    
+    
 }
 .about .content1{
     padding-top:8rem;
     font-size: 3rem;
     color: var(--black);
+    animation: drop 0.5s ease forwards;
+    
 }
 .about .paragraph{
     color: var(--light-color);
     font-size: 2.2rem;
     padding: 1rem 0;
     line-height: 1.5;
-}
-.contact{
-    background: rgb(245, 235, 220);
+    animation: drop 0.8s ease forwards;
 }
 .contact .row{
     display: flex;

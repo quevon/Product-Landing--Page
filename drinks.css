@@ -199,11 +199,16 @@ header .icons #menu-bars{
 .dishes .box-container .box img{
     height: 17rem;
     margin: 1rem 0;
-  
+    animation: drop 0.5s ease forwards;
+}
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{transform: translateY(-1100px)}
+    100%{transform: translateY(0); opacity: 1;}
 }
 
 
-.dishes .box-container .box img:hover{
+.dishes .box-container .box:hover{
     transform: translateY(-10px);
 }
 .dishes .box-container .box h3{
