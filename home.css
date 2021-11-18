@@ -217,6 +217,7 @@ header .icons #menu-bars{
     padding: .5rem 0;
     line-height: 1.5;
     animation: trans 0.9s ease forwards;
+    text-align: justify;
 }
 .swiper-pagination-bullet-active{
     background-color: orange !important;
@@ -226,7 +227,7 @@ header .icons #menu-bars{
     display: block;
     align-items: center;
     justify-items: center;
-    
+    text-align: justify;
     
 }
 .about .content1{
@@ -391,6 +392,9 @@ header .icons #menu-bars{
     section{
         padding: 2rem;
     }
+    .about{
+        text-align: justify;
+    }
 }
 @media (max-width:768px){
 
@@ -424,6 +428,9 @@ header .icons #menu-bars{
 
         font-size: 5rem;
     }
+    .about{
+        text-align: justify
+    }
 }
 @media(max-width:450px){
     html{
@@ -433,5 +440,8 @@ header .icons #menu-bars{
     .dishes .box-container .box img{
         height: auto;
         width: 100%;
+    }
+    .about{
+        text-align: justify;
     }
 }
