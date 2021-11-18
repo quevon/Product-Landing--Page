@@ -229,7 +229,16 @@ header .icons #menu-bars{
     100%{transform: translateY(0); opacity: 1;}
 }
 
-
+.burger .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+    animation: drop 0.5s ease forwards;
+}
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{transform: translateY(-1100px)}
+    100%{transform: translateY(0); opacity: 1;}
+}
 .burger .box-container .box:hover,
 .drinks .box-container .box:hover,
 .dessert .box-container .box:hover{
