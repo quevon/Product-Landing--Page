@@ -95,6 +95,7 @@ header .icons a{
     color: var(--black);
     border-radius: 50%;
     background: rgb(245, 235, 220);
+    border: 1px  solid var(--black);
 
 }
 header .icons i:hover,
@@ -372,7 +373,9 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
-    .dishes .box-container .box img{
+    .burger .box-container .box img,
+    .drinks .box-container .box img,
+    .dessert .box-container .box img{
         height: auto;
         width: 100%;
     }

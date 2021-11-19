@@ -55,7 +55,7 @@ section:nth-child(even){
     border-radius: 5rem;
     padding: .8rem 3rem;
     cursor: pointer;
-    animation: drop 0.8s ease;
+    animation: drop 0.7s ease;
 
 }
 @keyframes drop{
@@ -108,6 +108,7 @@ header .icons a{
     color: var(--black);
     border-radius: 50%;
     background: rgb(245, 235, 220);
+    border: 1px  solid var(--black);
 
 }
 header .icons i:hover,
@@ -325,8 +326,4 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
-    .dishes .box-container .box img{
-        height: auto;
-        width: 100%;
-    }
 }
