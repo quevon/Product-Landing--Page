@@ -397,20 +397,20 @@ header .icons #menu-bars{
     resize: none;
     background: none;
 }
-
+.review .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
 .review .slide{
     padding: 2rem;
     box-shadow: var(--box-shadow);
     border: .1rem solid rgba(0,0,0, .2);
     border-radius: .5rem;
     position: relative;
+
 }
-.review .slide .fa-quote-right{
-    position: absolute;
-    top: 2rem; right: 2rem;
-    font-size: 6rem;
-    color:#ccc;
-}
+
 .review .slide .user{
     display: flex;
     gap: 1.5rem;
@@ -519,6 +519,7 @@ header .icons #menu-bars{
 
 
     header{
+        position: fixed;
         padding:1rem 2rem;
     }
     section{
@@ -569,7 +570,7 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
-    .dishes .box-container .box img{
+    .menu .box-container .box img{
         height: auto;
         width: 100%;
     }
