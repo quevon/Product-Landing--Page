@@ -34,7 +34,6 @@ section:nth-child(even){
 .sub-heading{
     text-align: center;
     color: var(--red);
-  
     font-size: 2rem;
     padding-top: 1rem;
 }
@@ -163,7 +162,6 @@ header .icons #menu-bars{
 }
 
 
-
 .home .home-slider .slide{
     display: flex;
     align-items: center;
@@ -222,6 +220,80 @@ header .icons #menu-bars{
 .swiper-pagination-bullet-active{
     background-color: orange !important;
 }
+
+
+/* menu style  */
+
+.menu{
+    background: rgb(245, 235, 220);
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+
+}
+.menu .box-container .box{
+    padding:2.5rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.menu .box-container .box .menu-1{
+    height: 17rem;
+    margin: 1rem 0;
+    animation: drop 0.5s ease forwards;
+}
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{transform: translateY(-1100px)}
+    100%{transform: translateY(0); opacity: 1;}
+}
+.menu .box-container .box .menu-2{
+    height: 17rem;
+    margin: 1rem 0;
+    animation: drop 0.7s ease forwards;
+}
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{transform: translateY(-1100px)}
+    100%{transform: translateY(0); opacity: 1;}
+}
+.menu .box-container .box .menu-3{
+    height: 17rem;
+    margin: 1rem 0;
+    animation: drop 0.9s ease forwards;
+}
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{transform: translateY(-1100px)}
+    100%{transform: translateY(0); opacity: 1;}
+}
+.menu .box-container .box:hover {
+    transform: translateY(-10px);
+ 
+}
+.menu .box-container .box:hover >*{
+    color: var(--red);
+ 
+}
+.menu .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+
+.menu .box-container .box .stars{
+    padding:1rem 0;
+}
+
+
 
 .about{
     display: block;
@@ -328,7 +400,6 @@ header .icons #menu-bars{
 }
 
 .footer{
-    background:var(--black);
     text-align: center;
     border-top: 1px solid var(--black);
 }

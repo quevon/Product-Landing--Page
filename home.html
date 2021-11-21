@@ -17,10 +17,10 @@
         <a href="#" class="logo"><img src="images/logobk.png" alt=""></i></a>
 
         <nav class="navbar">
-            <a class="active" href="#home">home</a>
-            <a href="menus.html">menu</a>
-            <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
+            <a href="#home">home</a>
+            <a href="#menu">menu</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
             <a  href="signup.html">Sign up</a>
             <a href="log-in.html">Log In</a>
    
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-        <!-- search form -->
+    <!-- search form -->
 
     <form action="" id="search-form">
         <input type="search" placeholder="search" name="" id="search-box">
@@ -44,7 +44,7 @@
     
     <!-- home section  -->
 
-    <section class="home">
+    <section class="home" id = "home">
 
 
         <div class="swiper home-slider">
@@ -57,7 +57,7 @@
                         <span>Best Seller</span>
                         <h3>Burger Whopper</h3>
                         <p>Look who's here - THE burger to rule them all. A real meaty flame-grilled Whopper® beef patty, topped with tangy pickles, ketchup, fresh tomatoes, crisp lettuce and fresh onions, finished with creamy mayo , and served on a toasted 5" sesame seed bun. Feeling hungry for a real meaty burger yet?</p>
-                        <a href="menus.html" class="btn">order now</a>
+                        <a href="#menu" class="btn">order now</a>
                     </div>
                     <div class="image" >
                         <img src="images/burger/b1.png" alt="">
@@ -69,7 +69,7 @@
                         <span>Best Seller</span>
                         <h3>bacon king</h3>
                         <p> BACON KING™ sandwich, a big, hearty, bacon-rich burger that will never apologize. With six slices of crispy bacon, two ¼ lb1 savory flame-grilled 100% beef patties, four slices of American cheese, ketchup and creamy mayonnaise on a soft sesame seed bun.</p>
-                        <a href="menus.html" class="btn">order now</a>
+                        <a href="#menu" class="btn">order now</a>
                     </div>
                     <div class="image">
                         <img src="images/burger/b4.png" alt="">
@@ -81,7 +81,7 @@
                         <span>Best Seller</span>
                         <h3>Cheeseburger</h3>
                         <p>You can’t go wrong with our cheeseburger, a signature flame-grilled beef patty topped with a simple layer of melted American cheese, crinkle cut pickles, yellow mustard, and ketchup on a toasted sesame seed bun.</p>
-                        <a href="menus.html" class="btn">order now</a>
+                        <a href="#menu" class="btn">order now</a>
                     </div>
                     <div class="image">
                         <img src="images/burger/Cheeseburger.png" alt="">
@@ -93,6 +93,68 @@
         </div>
     </section>
 
+<!-- menu section  -->
+
+<section class ="menu" id="menu">
+    <h3 class="heading">Our menu</h3>
+
+
+    <div class="box-container">
+        <a href="burgers.html"><div class="box" >
+            <img class="menu-1" src="images/bkwhooper.png" alt="">
+            <h3>Burgers</h3>
+            
+        </div></a>
+        <a href="drinks.html"><div class="box">
+            <img class="menu-2" src="images/ccoke.png" alt="">
+            <h3>Drinks</h3>
+        </div></a>
+        <a href="sweets.html"><div class="box">
+            <img class = "menu-3" src="images/dish-5.png" alt="">
+            <h3>Desserts</h3>
+        </div></a>
+    </div>
+</section>
+
+<!-- about section start  -->
+
+<section class="about" id="about">
+    <h1 class="heading">About Us</h3>
+    <h1 class="content1">Great Food Comes First</h1>
+    <p class="paragraph">Every day, more than 11 million guests visit Burger King restaurants around the world. And they do so because our restaurants are known for serving high-quality, great-tasting, and affordable food. Founded in 1954, Burger King is the second largest fast food hamburger chain in the world. The original Home of the Whopper, our commitment to premium ingredients, signature recipes, and family-friendly dining experiences is what has defined our brand for more than 50 successful years.</p>
+</section>
+
+
+<!-- contact section  -->
+
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3859.966567503531!2d120.9605094!3d14.6578388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b55d3b13374b%3A0x40a8d7cc1fe3b0d6!2sBurger%20King!5e0!3m2!1sen!2sph!4v1637131995198!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email" required>
+            </div>
+            <div class="inputBox1">
+                <textarea name="comment" form="usrform" placeholder="message" required></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </div>
+
+</section>
 <!-- footer section  -->
     
 <section class="footer">
