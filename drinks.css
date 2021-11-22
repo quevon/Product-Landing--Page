@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 :root{
-    --red: #ff0000;
-    --black:#192a56;
+    --red:#F11714;
+    --black:#135296;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 
@@ -20,6 +20,16 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+    border-radius: 5rem;
 }
 body{
     background: rgb(245, 235, 220);
@@ -103,6 +113,13 @@ header .icons a:hover{
     color:#fff;
     background: var(--red);
     transform: rotate(360deg);
+}
+header .icons .signup{
+    border-radius: 50px;
+    border: 1px solid red;
+    color: red;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.5rem;
 }
 header .icons #menu-bars{
     display: none;
