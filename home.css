@@ -245,7 +245,7 @@ header .icons #menu-bars{
     text-align: justify;
 }
 .swiper-pagination-bullet-active{
-    background-color: orange !important;
+    background-color: var(--red) !important;
 }
 
 
