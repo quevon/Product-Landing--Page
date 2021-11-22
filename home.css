@@ -259,7 +259,7 @@ header .icons #menu-bars{
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap: 1.5rem;
+    gap: 2.5rem;
     justify-items: center;
     align-items: center;
     padding-top: 70px;
