@@ -27,6 +27,7 @@ body{
 }
 section{
     padding: 2rem 9%;
+   
 }
 section:nth-child(even){
     background: rgb(245, 235, 220);
@@ -159,7 +160,12 @@ header .icons #menu-bars{
     top: 2rem; right: 3rem;
     font-size: 5rem;
 }
-
+.home{
+    min-height: 100vh;
+    background: url(./images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+}
 
 .home .home-slider .slide{
     display: flex;
@@ -204,12 +210,12 @@ header .icons #menu-bars{
     100%{transform: translateY(0); opacity: 1;}
 }
 .home .home-slider .slide .content h3{
-    color: var(--black);
+    color: #000;
     font-size: 6rem;
     animation: trans 0.7s ease forwards;
 }
 .home .home-slider .slide .content p{
-    color: var(--light-color);
+    color: black;
     font-size: 1.8rem;
     padding: .5rem 0;
     line-height: 1.5;
@@ -224,6 +230,8 @@ header .icons #menu-bars{
 /* menu style  */
 
 .menu{
+ 
+    min-height: 100vh;
     background: rgb(245, 235, 220);
 }
 .menu .box-container{
@@ -232,6 +240,7 @@ header .icons #menu-bars{
     gap: 1.5rem;
     justify-items: center;
     align-items: center;
+    padding-top: 70px;
 
 }
 .menu .box-container .box{
@@ -299,6 +308,7 @@ header .icons #menu-bars{
     align-items: center;
     justify-items: center;
     text-align: justify;
+    min-height: 100vh;
     
 }
 .about .content1{
@@ -314,6 +324,9 @@ header .icons #menu-bars{
     padding: 1rem 0;
     line-height: 1.5;
     animation: drop 0.8s ease forwards;
+}
+.contact{
+    min-height: 100vh;
 }
 .contact .row{
     display: flex;
@@ -397,10 +410,20 @@ header .icons #menu-bars{
     resize: none;
     background: none;
 }
+.review{
+    min-height: 100vh;
+    text-align: center;
+    
+}
+.review a{
+    margin-top: 5rem;
+}
+
 .review .wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 1.5rem;
+    justify-items: center;
 }
 .review .slide{
     padding: 2rem;
@@ -408,6 +431,7 @@ header .icons #menu-bars{
     border: .1rem solid rgba(0,0,0, .2);
     border-radius: .5rem;
     position: relative;
+    background: #fff;
 
 }
 
